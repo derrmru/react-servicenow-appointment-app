@@ -1,0 +1,73 @@
+.details-container {
+    border: 1px solid var(--the-black);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button-container button {
+    width: 45%;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--the-black);
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button-container button:hover {
+    background-color: var(--the-black);
+    cursor: pointer;
+    color: white;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    text-align: left;
+    width: 100%;
+}
+
+form input, select {
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px 0 10px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--the-black);
+    -webkit-appearance:none;
+}
+
+form select {
+    width: calc(100% + 5px);
+}
+
+#submit {
+    margin: 20px 0;
+    width: 96%;
+    padding: 10px 10px;
+    border: 1px solid var(--the-black);
+    border-radius: 5px;
+    -webkit-appearance:none;
+}
+
+#submit:hover {
+    background-color: #1d355e;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .cal-container {
+      width: 100%;
+    }
+  }

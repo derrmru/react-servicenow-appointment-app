@@ -1,0 +1,111 @@
+.calendar {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: var(--the-black);
+}
+
+.calendar hr {
+    width: 96%;
+    margin: 10px auto;
+}
+
+.calendar h2 {
+    color: var(--the-black);
+}
+
+.calendar button { 
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.calendar button:hover {
+    background-color: var(--the-black);
+    color: white;
+    transition: 0.4s;
+}
+
+.calendar-field {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    padding: 10px 5px;
+}
+
+.cal-ui-container {
+    width: 98%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: white;
+    border: 1px solid var(--the-black);
+    border-radius: 5px;
+}
+
+.exit-container {
+    text-align: right;
+    margin: 5px;
+}
+
+.exit-container button:hover {
+    background-color: white;
+    color: black;
+}
+
+.exit-cal {
+    font-size: 10px;
+    background-color: white;
+    border: none;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.cal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+}
+
+.cal-nav-button {
+    padding: 0 20px;
+}
+
+.day-names {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.day-name {
+    width: 14%;
+    color: var(--the-black);
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.cal-days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.day {
+    width: 14%;
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: #1d355e9f;
+}
+
+.day:hover {
+    background-color: var(--the-black);
+    color: var(--the-white);
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+    .calendar {
+        width: 98%;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --the-black: #1d355e;
+  --the-blue: #248ec2;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Playfair Display', serif;
+  background-image: url('https://www.londonfootandanklesurgery.co.uk/wp-content/themes/dvio-lfas/images/foot-condition.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+hr {
+  width: 50%;
+  margin: 15px auto;
+}
+
+.App-title {
+  font-size: 38px;
+  margin: 5px 0 15px 0;
+  color: var(--the-black);
+}
+
+.App-sub-title {
+  font-size: 20px;
+  margin: 0 0 30px 0;
+  color: var(--the-blue);
+}
+
+h2 {
+  padding: 0;
+  text-align: center;
+}
+
+.cal-container {
+  width: 70%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .cal-container {
+    width: 100%;
+  }
+}

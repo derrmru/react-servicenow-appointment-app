@@ -1,0 +1,33 @@
+.times-container {
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--the-black);
+    padding: 20px;
+}
+
+.times-container button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--the-black);
+}
+
+.times-container button:hover {
+    background-color: var(--the-black);
+    cursor: pointer;
+    color: white;
+}
+
+#time-button {
+    margin: 5px auto;
+    background-color: #248dc2;
+    transition:0.2s;
+}
+
+#time-button:hover {
+    background-color: #1d355e;
+}
