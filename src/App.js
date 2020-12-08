@@ -47,7 +47,7 @@ const App = () => {
       return '';  
     })
 
-    axios.get('/api/now/table/u_appointments?sysparm_query=u_appointment_clinician%3D7f966266db7c2010f787f36f2996196b%5Eu_glide_date_1%3E%3Djavascript%3Ags.beginningOfToday()&sysparm_display_value=true')
+    axios.get('https://dev60876.service-now.com/api/now/table/u_appointments?sysparm_query=u_appointment_clinician%3D7f966266db7c2010f787f36f2996196b%5Eu_glide_date_1%3E%3Djavascript%3Ags.beginningOfToday()&sysparm_display_value=true')
       .then(res => {
         //console.log(res)
         let appArr = []
