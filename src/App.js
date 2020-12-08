@@ -19,7 +19,7 @@ const App = () => {
   let availableDates = [];
 
   useEffect(()=>{//inital call for available days
-     axios.get('/api/now/table/u_availability?sysparm_query=u_clinic_date%3E%3Djavascript%3Ags.beginningOfToday()%5Eu_room_clinician%3D7f966266db7c2010f787f36f2996196b&sysparm_display_value=true')
+     axios.get('https://dev60876.service-now.com/api/now/table/u_availability?sysparm_query=u_clinic_date%3E%3Djavascript%3Ags.beginningOfToday()%5Eu_room_clinician%3D7f966266db7c2010f787f36f2996196b&sysparm_display_value=true')
           .then(res => {
             res.data.result.map((x, i) => {
                 availableDates.push(x['u_clinic_date'].split('.'))
