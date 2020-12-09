@@ -18,7 +18,7 @@ const App = () => {
   const [stage, setStage] = useState('date-select');
   let availableDates = [];
 
-  useEffect(async () => {//inital call for available days
+  useEffect(() => {//inital call for available days
      axios.get('/api/now/table/u_availability?sysparm_query=u_clinic_date%3E%3Djavascript%3Ags.beginningOfToday()%5Eu_room_clinician%3D7f966266db7c2010f787f36f2996196b&sysparm_display_value=true')
           .then(res => {
             res.data.result.map((x, i) => {
@@ -49,7 +49,7 @@ const App = () => {
 
     axios.get('/api/now/table/u_appointments?sysparm_query=u_appointment_clinician%3D7f966266db7c2010f787f36f2996196b%5Eu_glide_date_1%3E%3Djavascript%3Ags.beginningOfToday()&sysparm_display_value=true')
       .then(res => {
-        //console.log(res)
+        console.log(res)
         let appArr = []
         res.data.result.map(appoint => appArr.push([appoint['u_glide_time_2'], appoint['u_appointment_length']]))
         setAvailableTimes(appArr)
