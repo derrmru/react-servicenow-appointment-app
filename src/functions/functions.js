@@ -3,7 +3,7 @@ export default {
         //console.log(availableTimes, startTime, endTime)
         
         //create start end pairs
-        let startEnds = [];
+        let startEnds = [[]];
         availableTimes && availableTimes.sort().map(x => {
             let first = parseInt(x[0].split(':')[0]);
             let second = (parseInt(x[0].split(':')[1]) / 60);
@@ -21,7 +21,7 @@ export default {
 
         //determine available start times
         startEnds.reverse()
-        //console.log(startEnds)
+        console.log(startEnds)
         let availableStartTimes = [];
         let startEndPosition = 0;
         let i = endNumber;
