@@ -21,7 +21,7 @@ export default {
 
         //determine available start times
         startEnds.reverse()
-        console.log(startEnds)
+        //console.log(startEnds)
         let availableStartTimes = [];
         let startEndPosition = 0;
         let i = endNumber;

@@ -15,7 +15,7 @@ const App = () => {
   const [availableTimes, setAvailableTimes] = useState();
   const [startTime, setStartTime] = useState();
   const [endTime, setEndTime] = useState();
-  const [stage, setStage] = useState('date-select');
+  const [stage, setStage] = useState('loading');
   let availableDates = [];
 
   useEffect(() => {//inital call for available days
@@ -30,6 +30,7 @@ const App = () => {
               })
             setAvailability(availableDates)//stores available Dates to be passed to Calendar component
             setResult(res.data.result);//stores results, which contains start and end of clinics, in order to determine available times when day has been selected
+            setStage('date-select')
           })
   },[])
 

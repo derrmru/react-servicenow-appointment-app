@@ -10,6 +10,7 @@ const Details = (props) => {
     const [email, setEmail] = useState('');
 
     const kaserRecord = '7f966266db7c2010f787f36f2996196b';
+    console.log(props.selectedTime)
 
     const submit = (e) => {
         e.preventDefault()
@@ -35,7 +36,7 @@ const Details = (props) => {
                 'u_appointment_length': '30',
                 'u_appointment_type': 'New Patient',
                 'u_glide_date_1': thisDate,
-                'u_glide_time_2': props.selectedTime,
+                'u_glide_time_2': thisDate.split(' ')[0] + ' ' + props.selectedTime,
                 'u_reference_2': patient
             })
                 .then (res => {
